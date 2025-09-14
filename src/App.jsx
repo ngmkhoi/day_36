@@ -1,12 +1,12 @@
 import AppRoutes from "./components/AppRoutes/index.jsx";
-import { HashRouter } from 'react-router-dom';
+import {BrowserRouter} from "react-router";
 
 
 function App() {
   return (
-      <HashRouter>
+      <BrowserRouter>
           <AppRoutes />
-      </HashRouter>
+      </BrowserRouter>
   )
 }
 
