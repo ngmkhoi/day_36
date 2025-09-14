@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ngmkhoi.github.io/f8-zoom-day36",
+  "homepage": "https://ngmkhoi.github.io/day_36",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
