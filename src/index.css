@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+}
+
+@layer base {
+    h2 {
+        @apply text-2xl font-bold;
+    }
+
+    h3 {
+        @apply text-xl font-bold;
+    }
+}
+
+@layer components {
+    .navlink-container li:last-child > .navlink-target {
+        @apply border-r-2;
+    }
+
+    .active-auth {
+        @apply text-black bg-white;
+    }
+
+    .pagi-active {
+        @apply text-white !bg-black;
+    }
+}
+
+@layer utilities {
+}
