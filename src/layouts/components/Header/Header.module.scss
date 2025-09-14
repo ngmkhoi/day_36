@@ -1,0 +1,65 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; /* Thêm padding ngang thay vì ở tất cả các phía */
+  height: 70px; /* Đặt chiều cao cố định cho header */
+  background-color: #1a202c; /* Nền tối sang trọng */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ để tạo chiều sâu */
+
+  .logo a {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem; /* Tăng khoảng cách giữa các mục */
+  }
+
+  nav a {
+    position: relative; /* Cần cho hiệu ứng gạch chân */
+    text-decoration: none;
+    color: #a0aec0; /* Màu chữ xám nhạt */
+    font-weight: 500;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+
+    /* Tạo gạch chân giả để làm hiệu ứng */
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #4299e1; /* Màu xanh dương cho gạch chân */
+      transform: scaleX(0); /* Ban đầu ẩn gạch chân đi */
+      transform-origin: center;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hiệu ứng khi hover */
+    &:hover {
+      color: #ffffff; /* Chữ chuyển sang màu trắng */
+      &::after {
+        transform: scaleX(1); /* Hiển thị gạch chân */
+      }
+    }
+  }
+
+  /* Style cho NavLink đang active */
+  .active {
+    color: #ffffff; /* Màu chữ trắng cho link active */
+
+    &::after {
+      transform: scaleX(1); /* Luôn hiển thị gạch chân */
+    }
+  }
+}

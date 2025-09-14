@@ -1,0 +1,32 @@
+/* AuthFooter.module.scss */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px; /* Tăng padding để thoáng hơn */
+  background-color: #1a202c; /* Sử dụng màu nền tối đồng bộ với Header */
+  color: #a0aec0; /* Màu chữ xám nhạt cho dễ đọc */
+  border-top: 1px solid #2d3748; /* Đường kẻ mỏng phía trên để phân tách */
+
+  p {
+    margin: 0; /* Xóa margin mặc định của thẻ p */
+    font-size: 0.9rem; /* Giảm kích thước chữ một chút */
+  }
+
+  .nav {
+    display: flex;
+    gap: 1.5rem; /* Tăng khoảng cách giữa các link */
+
+    a {
+      text-decoration: none;
+      color: #a0aec0; /* Màu mặc định của link */
+      transition: color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+
+      &:hover {
+        color: #ffffff; /* Chuyển thành màu trắng khi hover */
+        text-decoration: underline; /* Thêm gạch chân khi hover */
+      }
+    }
+  }
+}

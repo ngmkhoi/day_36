@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $light-bg;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: $header-height;
+  padding: 0 $spacing-6;
+  background-color: $light-surface;
+  border-bottom: 1px solid $light-border;
+  box-shadow: $shadow-subtle;
+  flex-shrink: 0;
+  z-index: 10;
+
+  h1 {
+    margin: 0;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: $light-text;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  padding: $spacing-6;
+  overflow-y: auto;
+}

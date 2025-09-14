@@ -1,0 +1,47 @@
+// ===== BẢNG MÀU (COLOR PALETTE) =====
+// Light Theme (cho nội dung chính)
+$light-bg:      #f8f9fa;
+$light-surface: #ffffff;
+$light-border:  #dee2e6;
+$light-text:    #212529;
+
+// Dark Theme (cho sidebar, footer...)
+$dark-bg-1:     #111827; // Nền chính (đậm nhất)
+$dark-bg-2:     #1f2937; // Nền phụ (nhạt hơn một chút)
+$dark-border:   #374151; // Viền hoặc nền khi hover
+$dark-text-1:   #d1d5db; // Chữ chính
+$dark-text-2:   #9ca3af; // Chữ phụ, icon
+
+// Accent Colors (Màu nhấn)
+$primary:       #4f46e5;
+$primary-hover: #4338ca;
+
+// ===== TYPOGRAPHY (FONT CHỮ) =====
+$font-size-base: 1rem;      // 16px
+$font-size-sm:   0.875rem;   // 14px
+$font-size-lg:   1.25rem;    // 20px
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold:   600;
+
+// ===== SPACING (KHOẢNG CÁCH) =====
+// Dùng một hệ thống khoảng cách nhất quán
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 24px;
+$spacing-6: 32px;
+
+// ===== LAYOUT DIMENSIONS =====
+$sidebar-width: 250px;
+$header-height: 70px;
+$footer-height: 50px;
+
+// ===== BORDERS & SHADOWS =====
+$border-radius: 8px;
+$shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+// ===== TRANSITIONS =====
+$transition-fast: all 0.2s ease-in-out;

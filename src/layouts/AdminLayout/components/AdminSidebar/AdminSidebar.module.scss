@@ -1,0 +1,48 @@
+/* AdminSidebar.module.scss */
+@use 'variables' as *;
+
+.sidebar {
+  width: $sidebar-width;
+  background-color: $dark-bg-1;
+  color: $dark-text-1;
+  padding: $spacing-5 $spacing-4;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; // Thêm thuộc tính này để đảm bảo sidebar không bị co lại
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: $spacing-3;
+  padding: $spacing-3 $spacing-4;
+  border-radius: $border-radius;
+  text-decoration: none;
+  color: $dark-text-1;
+  font-weight: $font-weight-medium;
+  transition: $transition-fast;
+
+  &:hover {
+    background-color: $dark-border;
+    color: $light-surface;
+  }
+}
+
+.active {
+  background-color: $primary;
+  color: $light-surface;
+  font-weight: $font-weight-bold;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}

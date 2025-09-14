@@ -1,0 +1,88 @@
+/* Posts.module.scss */
+
+// --- Biến số cho giao diện nhất quán ---
+$card-bg: #ffffff;
+$card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+$card-hover-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+$card-border-radius: 8px;
+$primary-color: #4f46e5;
+$text-color-light: #6b7280;
+$spacing-md: 1.5rem; // 24px
+$spacing-lg: 2rem;   // 32px
+
+// --- Container chính ---
+.posts {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-lg $spacing-md;
+
+  // --- Tiêu đề chính của trang ---
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing-lg;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  // --- Lưới chứa các bài post ---
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; // Hướng các item theo chiều dọc
+    gap: $spacing-md;
+  }
+
+  .postLink {
+    text-decoration: none; // Bỏ gạch chân mặc định của link
+    color: inherit; // Kế thừa màu chữ từ cha
+    display: block; // Giúp link chiếm toàn bộ không gian của thẻ li
+  }
+
+    // --- Style cho mỗi thẻ bài post ---
+  li {
+    background-color: $card-bg;
+    border-radius: $card-border-radius;
+    box-shadow: $card-shadow;
+    padding: $spacing-md;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+
+    // Hiệu ứng khi di chuột vào
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: $card-hover-shadow;
+    }
+
+    // --- Tiêu đề của mỗi bài post ---
+    h3 {
+      margin: 0 0 0.75rem 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $primary-color;
+      // Giới hạn 2 dòng để tiêu đề không quá dài
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    // --- Nội dung của mỗi bài post ---
+    p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: $text-color-light;
+      line-height: 1.6;
+      // Giới hạn 4 dòng
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $footer-height;
+  padding: 0 $spacing-6;
+  background-color: $dark-bg-2; // Đồng bộ với màu nền tối
+  color: $dark-text-2;
+  border-top: 1px solid $dark-border;
+  flex-shrink: 0;
+
+  p {
+    margin: 0;
+    font-size: $font-size-sm;
+  }
+
+  .nav {
+    display: flex;
+    gap: $spacing-5;
+
+    a {
+      text-decoration: none;
+      color: $dark-text-2;
+      transition: $transition-fast;
+
+      &:hover {
+        color: $light-surface;
+        text-decoration: underline;
+      }
+    }
+  }
+}

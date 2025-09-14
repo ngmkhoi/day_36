@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Đảm bảo layout luôn cao bằng màn hình */
+  background-color: #f4f7f9; /* Màu nền nhẹ cho toàn bộ trang */
+}
+
+.container {
+  display: flex;
+  flex-grow: 1; /* Quan trọng: Giúp container lấp đầy không gian còn lại dưới Header */
+  width: 100%;
+}
+
+.content {
+  flex-grow: 1; /* Quan trọng: Giúp content lấp đầy không gian còn lại bên phải sidebar */
+  padding: 24px 32px; /* Thêm khoảng đệm cho nội dung */
+  overflow-y: auto; /* Cho phép cuộn khi nội dung dài hơn màn hình */
+}
