@@ -1,5 +1,5 @@
 import AppRoutes from "./components/AppRoutes/index.jsx";
-import {HashRouter} from "react-router";
+import {HashRouter} from "react-router-dom";
 
 
 function App() {
