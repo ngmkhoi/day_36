@@ -4,7 +4,7 @@ import {HashRouter} from "react-router";
 
 function App() {
   return (
-      <HashRouter basename="/day_36">
+      <HashRouter>
           <AppRoutes />
       </HashRouter>
   )
